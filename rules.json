@@ -1,0 +1,34 @@
+[
+    {
+        "condition": {
+            "All": [
+                {
+                    "MatchesCategory": "building"
+                },
+                {
+                    "MatchesKind": "farm"
+                }
+            ]
+        },
+        "sound": "sounds/building/farm.wav"
+    },
+    {
+        "condition": {
+            "MatchesCategory": "plant"
+        },
+        "sound": "sounds/plant/tree.wav"
+    },
+    {
+        "condition": {
+            "All": [
+                {
+                    "MatchesKind": "farm"
+                },
+                {
+                    "MatchesCategory": "plant"
+                }
+            ]
+        },
+        "sound": "sounds/creature/birds.wav"
+    }
+]
