@@ -35,12 +35,14 @@ fn sound_thread(rx: Receiver<HashSet<FigureInfo>>, rules: Vec<Rule>) {
 }
 
 fn main() -> color_eyre::Result<()> {
-    let port = serialport::new("COM3", 9600)
+    let args: Vec<String> = std::env::args().collect();
+    let port_name = &args[1];
+    let port = serialport::new(port_name, 9600)
         .timeout(Duration::from_millis(1000))
         .open()?;
     let mut reader = BufReader::new(port);
 
-    let rules_path = std::env::args().nth(1).unwrap();
+    let rules_path = &args[2];
     let rules: Vec<Rule> =
         serde_json::from_reader(std::fs::File::open(rules_path).unwrap()).unwrap();
 

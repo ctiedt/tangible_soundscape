@@ -1,0 +1,16 @@
+[package]
+name = "stm32_figure_reader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+alloc-cortex-m = "0.4.4"
+cortex-m = "0.7.7"
+cortex-m-rt = "0.7.3"
+embedded-hal = "0.2.7"
+mfrc522 = "0.6.0"
+nb = "1.1.0"
+#panic-halt = "0.2.0"
+stm32f4xx-hal = { version = "0.16.0", features = ["stm32f401"] }

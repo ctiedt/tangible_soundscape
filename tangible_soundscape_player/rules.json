@@ -10,11 +10,11 @@
                 }
             ]
         },
-        "sound": "sounds/creature/crickets.wav"
+        "sound": "sounds/building/farm.wav"
     },
     {
         "condition": {
-            "MatchesCategory": "plant"
+            "MatchesSubcategory": "tree"
         },
         "sound": "sounds/plant/tree.wav"
     },
@@ -25,10 +25,10 @@
                     "MatchesKind": "farm"
                 },
                 {
-                    "MatchesCategory": "plant"
+                    "MatchesSubcategory": "tree"
                 }
             ]
         },
-        "sound": "sounds/creature/owls.wav"
+        "sound": "sounds/creature/birds.wav"
     }
 ]
