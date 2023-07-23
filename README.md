@@ -21,3 +21,5 @@ The example sounds distributed here are taken from freesound.org.
 - "Birds in the wood.wav" by emilgasi
 - "1203_hungarian_sheep.wav" reinsamba
 - "tree_creak_04.wav" by Department64
+- "frogs in a pond" by eastierp
+- "Stream Running Into Pond" by mhtaylor67

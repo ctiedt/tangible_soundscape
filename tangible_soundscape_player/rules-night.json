@@ -30,5 +30,31 @@
             ]
         },
         "sound": "sounds/creature/owls.wav"
+    },
+    {
+        "condition": {
+            "All": [
+                {
+                    "MatchesCategory": "landscape"
+                },
+                {
+                    "MatchesSubcategory": "water"
+                }
+            ]
+        },
+        "sound": "sounds/landscape/pond.wav"
+    },
+    {
+        "condition": {
+            "All": [
+                {
+                    "MatchesCategory": "landscape"
+                },
+                {
+                    "MatchesSubcategory": "water"
+                }
+            ]
+        },
+        "sound": "sounds/creature/frogs.wav"
     }
 ]
