@@ -1,3 +1,4 @@
+#![feature(default_alloc_error_handler)]
 #![allow(clippy::empty_loop)]
 #![no_main]
 #![no_std]
@@ -136,8 +137,8 @@ fn main() -> ! {
 
             let itf = SpiInterface::new(spi).with_nss(cs1);
             let mut mfrc522 = Mfrc522::new(itf).init().unwrap();
-            let mfrc522_version = mfrc522.version().unwrap();
-            assert!(mfrc522_version == 0x91 || mfrc522_version == 0x92,);
+            //let mfrc522_version = mfrc522.version().unwrap();
+            //assert!(mfrc522_version == 0x91 || mfrc522_version == 0x92,);
 
             if let Ok(atqa) = mfrc522.reqa() {
                 if let Ok(uid) = mfrc522.select(&atqa) {
@@ -180,8 +181,8 @@ fn main() -> ! {
 
             let itf = SpiInterface::new(spi).with_nss(cs2);
             let mut mfrc522 = Mfrc522::new(itf).init().unwrap();
-            let mfrc522_version = mfrc522.version().unwrap();
-            assert!(mfrc522_version == 0x91 || mfrc522_version == 0x92);
+            //let mfrc522_version = mfrc522.version().unwrap();
+            //assert!(mfrc522_version == 0x91 || mfrc522_version == 0x92);
 
             if let Ok(atqa) = mfrc522.reqa() {
                 if let Ok(uid) = mfrc522.select(&atqa) {

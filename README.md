@@ -3,9 +3,14 @@
 This project was created as part of the *Sonic Thinking* and *Design Thinking for Digital Engineering* courses
 in the summer term 2023 at HPI.
 
+It presents a proof of concept for using miniatures equipped with RFID
+chips to dynamically generate ambient soundscapes in tabletop RPGs.
+
+There is also a [demo video](https://files.tiedt.dev/demo.mp4).
+
 ## Instructions
 
-The RFID readers ar MFRC522 modules connected to an STM32F401RE board. Build the image for the board by calling
+The RFID readers are MFRC522 modules connected to an STM32F401RE board. Build the image for the board by calling
 `make` in the `stm32_figure_reader` directory and flash `node.bin` to the board.
 
 Connect the board to a PC with a Mini USB cable and run the `tangible_soundscape_player` binary with the board's serial
